@@ -24,4 +24,21 @@ describe('Tick', function() {
   it("has initial state", function() {
     expect(tick.board.cells.length).toEqual(9)
   })
+
+  it("keeps a cell alive if it has 2 to 3 live neighbours", function() {
+    expect(tick.inspect(cell2)).toEqual(1)
+  })
+
+  it("kills a cell if it has fewer than 2 live neighbours", function() {
+    expect(tick.inspect(cell1)).toEqual(0)
+  })
+
+  it("kills a cell if it has more than 3 live neighbours", function() {
+    expect(tick.inspect(cell6)).toEqual(0)
+  })
+
+  it("turns a cell alive if it has 3 live neighbours", function() {
+    expect(tick.inspect(cell4)).toEqual(1)
+  })
+
 })
