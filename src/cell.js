@@ -1,4 +1,7 @@
-function Cell(state) {
+// x and y are coordinates on the x and y axis of a board
+function Cell(x, y, state) {
+  this.x = x
+  this.y = y
   this.state = state
 }
 
