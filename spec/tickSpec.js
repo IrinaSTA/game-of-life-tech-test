@@ -41,4 +41,9 @@ describe('Tick', function() {
     expect(tick.inspect(cell4)).toEqual(1)
   })
 
+  it("can stage all changes", function() {
+    tick.stageChanges()
+    expect(tick.newStates).toEqual([0, 1, 1, 1, 0, 0, 0, 1, 1])
+  })
+
 })

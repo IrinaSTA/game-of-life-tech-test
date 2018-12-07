@@ -17,3 +17,8 @@ Tick.prototype.inspect = function(cell) {
     }
   }
 }
+
+Tick.prototype.stageChanges = function() {
+  this.newStates = this.board.cells.map(obj => this.inspect(obj))
+  return this.newStates
+}
