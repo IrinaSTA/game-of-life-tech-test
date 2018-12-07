@@ -5,4 +5,9 @@ describe("Cell", function() {
     cell = new Cell(1)
     expect(cell.state).toEqual(1)
   })
+
+  it("can be dead", function() {
+    cell = new Cell(0)
+    expect(cell.state).toEqual(0)
+  })
 })
