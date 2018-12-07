@@ -51,6 +51,10 @@ I've built the business logic for the Game of Life, which consists of four inter
 
 ```game.board```
 
+- Test coverage:
+
+![test_coverage](./public/images/test_coverage.png)
+
 ## Tech Used and Dependencies
 
 - The game is written in Javascript
