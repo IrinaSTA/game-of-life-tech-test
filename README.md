@@ -31,8 +31,9 @@ I've built the business logic for the Game of Life, which consists of four inter
 
 ## What I Would Do Next
 
+- Allow board to print to console in a user-friendly format after each tick, so user can see game play
 - Allow game to run infinitely, stopping if steady state is reached
-- Build visualisation
+- Build web-based game front-end
 
 ## How To Run and Test It
 
