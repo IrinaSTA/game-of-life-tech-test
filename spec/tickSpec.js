@@ -46,4 +46,16 @@ describe('Tick', function() {
     expect(tick.newStates).toEqual([0, 1, 1, 1, 0, 0, 0, 1, 1])
   })
 
+  it("can change the board", function() {
+    tick.changeBoard()
+    expect(tick.board.cells[0].state).toEqual(0)
+    expect(tick.board.cells[1].state).toEqual(1)
+    expect(tick.board.cells[2].state).toEqual(1)
+    expect(tick.board.cells[3].state).toEqual(1)
+    expect(tick.board.cells[4].state).toEqual(0)
+    expect(tick.board.cells[5].state).toEqual(0)
+    expect(tick.board.cells[6].state).toEqual(0)
+    expect(tick.board.cells[7].state).toEqual(1)
+    expect(tick.board.cells[8].state).toEqual(1)
+  })
 })

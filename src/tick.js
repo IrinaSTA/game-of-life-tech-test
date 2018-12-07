@@ -22,3 +22,12 @@ Tick.prototype.stageChanges = function() {
   this.newStates = this.board.cells.map(obj => this.inspect(obj))
   return this.newStates
 }
+
+Tick.prototype.changeBoard = function() {
+  this.stageChanges()
+  var n = 0
+  while (n < this.board.cells.length) {
+    this.board.cells[n].state = this.newStates[n]
+    n++
+  }
+}
